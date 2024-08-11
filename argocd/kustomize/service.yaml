@@ -1,0 +1,11 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: animal-facts-service
+spec:
+  selector:
+    app: animals
+  ports:
+  - protocol: TCP
+    port: 8082
+    targetPort: 5000
